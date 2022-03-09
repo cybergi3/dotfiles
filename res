@@ -6,4 +6,8 @@ xrandr --addmode VGA1 "1920x1080_60.00"
 xrandr --output VGA1 --mode "1920x1080_60.00"
 xrandr --output VGA1 --primary
 xrandr --output eDP1 --off
+xrandr --addmode VGA-1 "1920x1080_60.00"
+xrandr --output VGA-1 --mode "1920x1080_60.00"
+xrandr --output VGA-1 --primary
+xrandr --output eDP-1 --off
 nitrogen --restore
