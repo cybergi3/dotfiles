@@ -12,7 +12,7 @@ makepkg
 sudo pacman -U yay-bin-*
 cd ..
 yay -S polybar-git
-
+yay -S librewolf-bin
 sudo mv /bin/alacritty /bin/alacritty-term
 sudo cp alacritty /bin
 sudo chmod +x /bin/alacritty
