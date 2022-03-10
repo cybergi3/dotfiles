@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S python3 python-pip git nitrogen picom i3-gaps dmenu alacritty xorg-server xorg-xinit xorg-xrandr fish wget --needed --noconfirm
+sudo pacman -S python3 python-pip git nitrogen picom i3-gaps dmenu alacritty xorg-server xorg-xinit xorg-xrandr fish gdk-pixbuf-xlib wget --needed --noconfirm
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
 
@@ -12,6 +12,7 @@ makepkg
 sudo pacman -U yay-bin-*
 cd ..
 yay -S polybar-git
+yay -S timeshift-bin
 yay -S librewolf-bin
 sudo mv /bin/alacritty /bin/alacritty-term
 sudo cp alacritty /bin
