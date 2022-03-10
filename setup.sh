@@ -28,3 +28,12 @@ cp polybar-config.ini ~/.config/polybar/config.ini
 
 sudo cp res /bin
 
+git clone https://github.com/cybergi3/dwm
+cd dwm
+sudo make clean install
+cd ..
+git clone https://github.com/Axarva/dotfiles-2.0.git
+cd ./dotfiles-2.0
+chmod +x ./install-on-arch.sh
+bash install-on-arch.sh
+
