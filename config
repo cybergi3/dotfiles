@@ -4,13 +4,16 @@
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
 #
-
+client.focused          #fc9ce6         #fc9ce6         #ffff33         $coloratt       #fc9ce6
+client.unfocused        #7e58fc         #7e58fc         #888888         $coloratt       #7e58fc
+client.urgent           #8e1c4a         #8e1c4a         #ffffff         $coloratt       #8e1c4a
 # i3 config file (v4)
 #customized by me
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 2
 gaps inner 20
 #starting polybar
 exec_always --no-startup-id polybar example
+exec_always --no-startup-id picom --blur-method dual_kawase  --experimental-backends --blur-strength 7
 
 
 set $mod Mod4
